@@ -4,7 +4,7 @@
 <head>
 	<!-- Basic Page Info -->
 	<meta charset="utf-8" />
-	<title>Audith - Reporting Dashboard</title>
+	<title>Audith - Bank Safety Audit Portal</title>
 
 	<!-- Site favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png" />
@@ -57,7 +57,7 @@
 	<div class="pre-loader">
 		<div class="pre-loader-box">
 			<div class="loader-logo">
-				<img src="vendors/images/deskapp-log.svg" alt="" />
+				<img src="vendors/images/deskapp-logo.svg" alt="" />
 			</div>
 			<div class="loader-progress" id="progress_div">
 				<div class="bar" id="bar1"></div>
@@ -428,59 +428,45 @@
 			<div class="pd-20 card-box mb-30">
 				<div class="clearfix">
 					<div class="pull-left">
-						<h4 class="text-blue h4">horizontal Basic Forms</h4>
-						<p class="mb-30">All bootstrap element classies</p>
+						<h4 class="text-blue h4">Introduction</h4>
+						<p class="mb-30">Bank Safety Audit Portal</p>
 					</div>
-					<div class="pull-right">
-						<a href="#horizontal-basic-form1" class="btn btn-primary btn-sm scroll-click" rel="content-y"
-							data-toggle="collapse" role="button"><i class="fa fa-code"></i> Source
-							Code</a>
-					</div>
+					 
 				</div>
 				<form>
 					<div class="form-group">
-						<label>Text</label>
-						<input class="form-control" type="text" placeholder="Johnny Brown" />
+						<label>Date of safety audit </label>
+						<input class="form-control" type="date" placeholder="Safety audit date" />
 					</div>
 					<div class="form-group">
-						<label>Email</label>
-						<input class="form-control" value="bootstrap@example.com" type="email" />
+						<label>Safety audit report for Bank? </label>
+						<input class="form-control" value="report bank name" type="text" />
 					</div>
 					<div class="form-group">
-						<label>URL</label>
-						<input class="form-control" value="https://getbootstrap.com" type="url" />
+						<label>Bank full address </label>
+						<input class="form-control" value="report bank name" type="text" />
 					</div>
 					<div class="form-group">
-						<label>Telephone</label>
-						<input class="form-control" value="1-(111)-111-1111" type="tel" />
+						<label>Name of safety auditor I </label>
+						<input class="form-control" value="auditor name 1" type="text" />
 					</div>
 					<div class="form-group">
-						<label>Password</label>
-						<input class="form-control" value="password" type="password" />
-					</div>
-					
-				 
-					<div class="form-group">
-						<label>Textarea</label>
-						<textarea class="form-control"></textarea>
+						<label>Name of safety auditor II</label>
+						<input class="form-control" value="auditor name 2" type="text" />
 					</div>
 					<div class="form-group">
-						<label>Help text</label>
-						<input type="text" class="form-control" />
-						<small class="form-text text-muted">
-							Your password must be 8-20 characters long, contain letters
-							and numbers, and must not contain spaces, special characters,
-							or emoji.
-						</small>
+						<label>Name of bank assessment participant</label>
+						<input class="form-control" value="assessment participant" type="text" />
 					</div>
-					
 					<div class="form-group">
-						<label>Custom file input</label>
-						<div class="custom-file">
-							<input type="file" class="custom-file-input" />
-							<label class="custom-file-label">Choose file</label>
-						</div>
+						<label>Position of bank assessment participant </label>
+						<input class="form-control" value="assessment participant" type="text" />
 					</div>
+
+					<div>
+						<button type="button" class="btn btn-primary">Submit</button>
+					</div>
+					 
 				</form>
 				<div class="collapse collapse-box" id="horizontal-basic-form1">
 					<div class="code-box">
@@ -495,48 +481,41 @@
 						<pre><code class="xml copy-pre" id="horizontal-basic">
 
 				<form>
-				<div class="form-group">
-					<label>Text</label>
-					<input class="form-control" type="text" placeholder="Johnny Brown">
-				</div>
-				<div class="form-group">
-					<label>Email</label>
-					<input class="form-control" value="bootstrap@example.com" type="email">
-				</div>
-				<div class="form-group">
-					<label>URL</label>
-					<input class="form-control" value="https://getbootstrap.com" type="url">
-				</div>
-				<div class="form-group">
-					<label>Telephone</label>
-					<input class="form-control" value="1-(111)-111-1111" type="tel">
-				</div>
-				<div class="form-group">
-					<label>Password</label>
-					<input class="form-control" value="password" type="password">
-				</div>
-				
-				<div class="form-group">
-					<label>Textarea</label>
-					<textarea class="form-control"></textarea>
-				</div>
-				<div class="form-group">
-					<label>Help text</label>
-					<input type="text" class="form-control">
-					<small class="form-text text-muted">
-					Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-					</small>
-				</div>
-				
-				<div class="form-group">
-				<label>Custom file input</label>
-				<div class="custom-file">
-					<input type="file" class="custom-file-input">
-					<label class="custom-file-label">Choose file</label>
-				</div>
-				</div>
-				</form>
+					<form>
+						<div class="form-group">
+							<label>Date of safety audit </label>
+							<input class="form-control" type="date" placeholder="Safety audit date" />
+						</div>
+						<div class="form-group">
+							<label>Safety audit report for Bank? </label>
+							<input class="form-control" value="report bank name" type="text" />
+						</div>
+						<div class="form-group">
+							<label>Bank full address </label>
+							<input class="form-control" value="report bank name" type="text" />
+						</div>
+						<div class="form-group">
+							<label>Name of safety auditor I </label>
+							<input class="form-control" value="auditor name 1" type="text" />
+						</div>
+						<div class="form-group">
+							<label>Name of safety auditor II</label>
+							<input class="form-control" value="auditor name 2" type="text" />
+						</div>
+						<div class="form-group">
+							<label>Name of bank assessment participant</label>
+							<input class="form-control" value="assessment participant" type="text" />
+						</div>
+						<div class="form-group">
+							<label>Position of bank assessment participant </label>
+							<input class="form-control" value="assessment participant" type="text" />
+						</div>
 
+						<div>
+							<button type="button" class="btn btn-primary">Submit</button>
+						</div>
+						 
+					</form>
 </code></pre>
 					</div>
 				</div>
@@ -552,40 +531,27 @@
 			<div class="pd-20 card-box mb-30">
 				<div class="clearfix">
 					<div class="pull-left">
-						<h4 class="text-blue h4">horizontal Basic Forms</h4>
-						<p class="mb-30">All bootstrap element classies</p>
+						<h4 class="text-blue h4">Introductions</h4>
+						<p class="mb-30">Bank Safety Audit Portal</p>
 					</div>
-					<div class="pull-right">
-						<a href="#horizontal-basic-form1" class="btn btn-primary btn-sm scroll-click" rel="content-y"
-							data-toggle="collapse" role="button"><i class="fa fa-code"></i> Source
-							Code</a>
-					</div>
+					
 				</div>
 				<form>
 					<div class="form-group">
-						<label>Text</label>
-						<input class="form-control" type="text" placeholder="Johnny Brown" />
+						<label>Who is designated to handle Health, Safety, and Environment in the branch?  </label>
+						<input class="form-control" type="text" placeholder="" />
 					</div>
 					<div class="form-group">
-						<label>Email</label>
-						<input class="form-control" value="bootstrap@example.com" type="email" />
+						<label>How many HSE personnel on ground?  </label>
+						<input class="form-control" value="" type="text" />
 					</div>
-				
-				 
-					<div class="form-group">
-						<label>Textarea</label>
-						<textarea class="form-control"></textarea>
+
+					<div>
+						<button type="button" class="btn btn-primary">Submit</button>
 					</div>
 					 
-					
-					<div class="form-group">
-						<label>Custom file input</label>
-						<div class="custom-file">
-							<input type="file" class="custom-file-input" />
-							<label class="custom-file-label">Choose file</label>
-						</div>
-					</div>
 				</form>
+
 				<div class="collapse collapse-box" id="horizontal-basic-form1">
 					<div class="code-box">
 						<div class="clearfix">
@@ -598,30 +564,6 @@
 						</div>
 						<pre><code class="xml copy-pre" id="horizontal-basic">
 
-				<form>
-				<div class="form-group">
-					<label>Text</label>
-					<input class="form-control" type="text" placeholder="Johnny Brown">
-				</div>
-				<div class="form-group">
-					<label>Email</label>
-					<input class="form-control" value="bootstrap@example.com" type="email">
-				</div>
-			 	
-				<div class="form-group">
-					<label>Textarea</label>
-					<textarea class="form-control"></textarea>
-				</div>
-				 
-				
-				<div class="form-group">
-				<label>Custom file input</label>
-				<div class="custom-file">
-					<input type="file" class="custom-file-input">
-					<label class="custom-file-label">Choose file</label>
-				</div>
-				</div>
-				</form>
 
 </code></pre>
 					</div>

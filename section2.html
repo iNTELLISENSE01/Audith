@@ -301,7 +301,7 @@
 				<form  id="reporting_injuries" class="Statutory_Compliance">
                     <div class="form-group">
                         <label>Has there been reporting of injuries, diseases & dangerous occurences to the relevant regulatory body? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="reporting_injuries_regulatory_body" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -310,7 +310,7 @@
 
 					<div class="form-group">
 						<label>Date of last reported incident? </label>
-						<input class="form-control" type="date" placeholder="" />
+						<input class="form-control" name="Date_reported_incident" type="date" placeholder="" />
 					</div>
 					
 				
@@ -331,7 +331,7 @@
 					
                     <div class="form-group">
                         <label>Is there a sufficient first aid box in the facility? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name=" sufficient_facility" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -340,12 +340,12 @@
 
 					<div class="form-group">
 						<label>What is the last recorded item used in the first aid box?  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" type="text" name=" last_recorded_first_box?" placeholder="" />
 					</div>
 
                     <div class="form-group">
                         <label>Is there any expired item in the first aid box</label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="expired_item_first_aid_box" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -354,7 +354,7 @@
 
                     <div class="form-group">
                         <label>Is there any other first-aid equipment </label>
-                        <select class="custom-select2 form-control" multiple="multiple" style="width: 100%">
+                        <select class="custom-select2 form-control" multiple="multiple" name="other_first-aid_equipment" style="width: 100%">
                                 <option value="Strectcher">Strectcher</option>
                                 <option value="Automatic External Defibrillator">Automatic External Defibrillator</option>
                                 <option value="Oxygen">Oxygen</option>
@@ -366,7 +366,7 @@
 
                     <div class="form-group">
                         <label>Is there a form for issued first aid treatment in the first aid box?</label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="issued_first-aid_treatment" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -390,7 +390,7 @@
 				<form  id="first_safety" class="Statutory_Compliance">
                     <div class="form-group">
                         <label>Are fire extinguishers present in the facility?</label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="fire_extinguishers_present" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -399,7 +399,7 @@
 
                     <div class="form-group">
                         <label>What classes of fire extinguishers are in the facility? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="classes_fire_extinguishers" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="DCP/ABC only">DCP/ABC only</option>
                                 <option value="CO2 only ">CO2 only</option>
@@ -409,14 +409,14 @@
 
                     <div class="form-group">
 						<label>When is the expiring date of the fire extinguishers within the facility?</label>
-						<input class="form-control" type="date" placeholder="" />
+						<input class="form-control" name="expiring_date_fire_extinguishers" type="date" placeholder="" />
 					</div>
 
                     <div class="form-group">
 						<label>When were the fire extinguishers serviced last? </label>
-						<input class="form-control" type="date" placeholder="" /> 
+						<input class="form-control" type="date" name="fire_extinguishers_serviced_last" placeholder="" /> 
                         <label> choose which fire equipment</label>
-                            <select class="custom-select2 form-control" multiple="multiple" style="width: 100%">
+                            <select class="custom-select2 form-control" name="fire_equipment" multiple="multiple" style="width: 100%">
                                     <option value="Fire extinguisher ">Fire extinguisher </option>
                                     <option value="Fire hose reel ">Fire hose reel </option>
                                     <option value="Smoke detector ">Smoke detector </option>
@@ -428,7 +428,7 @@
 
                     <div class="form-group">
                         <label>Is there a fire service certificate for the year 2023? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="fire_service_certificate" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -437,7 +437,7 @@
 
                     <div class="form-group">
                         <label>What other fire-fighting equipment are installed in the facility?   </label>
-                        <select class="custom-select2 form-control" multiple="multiple" style="width: 100%">
+                        <select class="custom-select2 form-control" name="other_fire-fighting_equipment_installed" multiple="multiple" style="width: 100%">
                                 <option value="Fire hose reels ">Fire hose reels </option>
                                 <option value="Water sprinklers ">Water sprinklers </option>
                                 <option value="Smoke detectors">Smoke detectors </option>
@@ -448,24 +448,24 @@
 
 					<div class="form-group">
                         <label>The fire extinguishers within the premises are they hung on the wall? and without obstruction? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="fire_extinguishers_hung_wall" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
                         </select>
                         <label>if no, where is it placed on the floor? </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name=" where_placed_floor" type="text" placeholder="" />
                     </div>
 
 					<div class="form-group">
                         <label>Are they free of obstruction? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="free_obstruction" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
                         </select>
                         <label>if no, where is the fire extinguisher obstructed? </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="where_fire_extinguisher_obstructed" type="text" placeholder="" />
                     </div>
 					
 				
@@ -487,7 +487,7 @@
 
                     <div class="form-group">
                         <label>Are lifting equipment provided for workers when lifting and conveying items to a designated point?  </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="lifting_equipment_provided" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -496,7 +496,7 @@
 
                     <div class="form-group">
                         <label>Did you sight any lifting equipment? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="sight_any_lifting_equipment" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -524,51 +524,51 @@
 
                     <div class="form-group">
                         <label>Are electrical distribution boxes securely locked? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="electrical_distribution_boxes_securely_locked" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
                         </select>
                         <label>if no, where is not locked? </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="where_not_locked" type="text" placeholder="" />
                     </div>
 
                     <div class="form-group">
                         <label>Did you sight any trailing cables within the facility?</label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="sight_any_trailing_cables" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
                         </select>
                         <label>If yes, where was it sighted </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="if_sighted" type="text" placeholder="" />
                     </div>
 
                     <div class="form-group">
                         <label>Did you sight any exposed naked wires within the facility? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="sight_any_exposed_naked_wires" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
                         </select>
                         <label>If yes, where was it sighted </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="if_sighted1" type="text" placeholder="" />
                     </div>
 
                     <div class="form-group">
                         <label>Did you sight any faulty sockets or switches within the facility? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="faulty_sockets_switches" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
                         </select>
                         <label>If yes, where was it sighted </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="if_sighted2" type="text" placeholder="" />
                     </div>
                   
                     <div class="form-group">
                         <label>Has a fire risk assessment been conducted to identify possible fire ignition sources? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="fire_risk_assessment" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -578,12 +578,12 @@
 
                     <div class="form-group">
 						<label>What is the last review date of the fire risk assessment? </label>
-						<input class="form-control" type="date" placeholder="" />
+						<input class="form-control" name="last_review_date_fire_risk_assessment" type="date" placeholder="" />
 					</div>
 
                     <div class="form-group">
                         <label>Ask for the procedure for monitoring electrical appliances. </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="procedure_monitoring_electrical_appliances" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Is it a documented process ">Is it a documented process </option>
                                 <option value="Word of mouth">Word of mouth</option>
@@ -612,7 +612,7 @@
 
                     <div class="form-group">
                         <label>Is workers' monitor screens' brightness moderate?</label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="monitor_screens_brightness_moderate" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes, it is dim">Yes, it is dim</option>
                                 <option value="No, it is not dim">No, it is not dim</option>
@@ -621,13 +621,13 @@
 
                     <div class="form-group">
                         <label>Are eye checks conducted by the banks to evaluate the impact of on-screen looking on workers' eyes? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="eye_checks_conducted" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
                         </select>
                         <label>if yes, how frequently?  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="yes_how_frequently" type="text" placeholder="" />
                     </div>
                   
                     <div class="button">

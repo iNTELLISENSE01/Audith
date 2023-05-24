@@ -687,7 +687,7 @@
 
                             <div class="button">
 								<a href="section2.html"><button type="button" class="btn btn-primary">Back</button></a>
-								<a href="section4.html"><button type="button" class="btn btn-primary">Next</button></a>
+								<a href="section4.html" onclick="submit()"><button type="button"  class="btn btn-primary">Next</button></a>
 		
 							</div>
 
@@ -721,6 +721,19 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS" height="0" width="0"
 			style="display: none; visibility: hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
+
+	<script src="form-request.js"></script>
+	<script>
+		function submit() {
+			getFormPayload().then((re) => {
+				save(re);
+			});
+		}
+
+		window.onload = function () {
+			setFormPayload();
+		}
+	</script>
 </body>
 
 </html>

@@ -327,7 +327,7 @@
 					
                     <div class="form-group">
                         <label>During the audit, did you see any step ladders to assist in height elevation? </label>
-                        <select class="custom-select2 form-control" name=" step_ladders_ assist_height_elevation" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="step_ladders_ assist_height_elevation" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -336,7 +336,7 @@
 
                     <div class="form-group">
                         <label>If yes, was it in a good condition?  </label>
-                        <select class="custom-select2 form-control" name=" good_condition" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="good_condition" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -345,7 +345,7 @@
 
                     <div class="button">
                         <a href="section3.html"><button type="button" class="btn btn-primary">Back</button></a>
-                        <a href="section5.html"><button type="button" class="btn btn-primary">Next</button></a>
+                        <a href="section5.html" onclick="submit()"><button type="button" class="btn btn-primary">Next</button></a>
 
 					</div>
 
@@ -376,6 +376,19 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS" height="0" width="0"
 			style="display: none; visibility: hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
+
+	<script src="form-request.js"></script>
+	<script>
+		function submit() {
+			getFormPayload().then((re) => {
+				save(re);
+			});
+		}
+
+		window.onload = function () {
+			setFormPayload();
+		}
+	</script>
 </body>
 
 </html>

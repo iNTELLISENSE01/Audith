@@ -298,22 +298,22 @@
 					</div>
 					 
 				</div>
-				<form>
+				<form id="Management_Review" class="Administration_Procedure">
 					<div class="form-group">
 						<label>When are HSE meetings conducted?  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="hse_meeting" type="text" placeholder="" />
 					</div>
 					<div class="form-group">
 						<label>Evidence of what was discussed? </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="evidence_discussed" type="text" placeholder="" />
 					</div>
 					<div class="form-group">
 						<label>Date of the last meeting held? </label>
-						<input class="form-control" type="date" placeholder="" />
+						<input class="form-control" name="date_last_meeting" type="date" placeholder="" />
 					</div>
 					<div class="form-group">
 						<label>Other comment  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
 					</div>
 					
 				
@@ -330,15 +330,11 @@
 					</div>
 					 
 				</div>
-				<form>
-					<div class="form-group">
-						<label>Is there evidence of workers compensation for workers?</label>
-						<input class="form-control" type="text" placeholder="" />
-					</div>
+				<form id="Insurance" class="Administration_Procedure" >
 
                     <div class="form-group">
                         <label>Is there evidence of workers compensation for workers?</label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="evidence_workers_compensation" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -347,12 +343,12 @@
 
 					<div class="form-group">
 						<label>if yes, when was it paid last?  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="when_paid_last" type="text" placeholder="" />
 					</div>
 
                     <div class="form-group">
                         <label>Is there evidence of building occupancy insurance? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="evidence_building_occupancy_insurance" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -361,11 +357,11 @@
 
 					<div class="form-group">
 						<label>if yes, when was it paid last? </label>
-						<input class="form-control" type="date" placeholder="" />
+						<input class="form-control" name="when_paid_last" type="date" placeholder="" />
 					</div>
 					<div class="form-group">
 						<label>Other comment  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
 					</div>
 					
 				
@@ -382,10 +378,10 @@
 					</div>
 					 
 				</div>
-				<form>
+				<form  id="Emergency_Procedure" class="Administration_Procedure" >
                     <div class="form-group">
                         <label>Is there evidence of a documented emergency response plan? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="evidence_documented_emergency_response_plan" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -394,12 +390,12 @@
 
 					<div class="form-group">
 						<label>When was the last review date? </label>
-						<input class="form-control" type="date" placeholder="" />
+						<input class="form-control" name="last_review_date" type="date" placeholder="" />
 					</div>
 
                     <div class="form-group">
                         <label>Has an emergency drill been conducted lately?  </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="emergency_drill_been_conducted_lately" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -408,13 +404,13 @@
 
                     <div class="form-group">
 						<label>Date of emergency drill? </label>
-						<input class="form-control" type="date" placeholder="" />
+						<input class="form-control" name="Date_emergency_drill" type="date" placeholder="" />
 					</div>
 
 
                     <div class="form-group">
                         <label>Is there evidence of appointed fire wardens?</label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="evidence_appointed_fire_wardens" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -423,7 +419,7 @@
 
                     <div class="form-group">
                         <label>Is there a registered retainers hospital for the branch?</label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="registered_retainers_hospital_branch" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -432,11 +428,11 @@
 
 					<div class="form-group">
 						<label>Name of Hospital </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="Name_Hospital" type="text" placeholder="" />
 					</div>
 					<div class="form-group">
 						<label>Other comment  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
 					</div>
 					
 				
@@ -453,10 +449,10 @@
 					</div>
 					 
 				</div>
-				<form>
+				<form  id="Safety_Policy" class="Administration_Procedure">
                     <div class="form-group">
                         <label>Is the safety policy sighted around the branch? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="safety_policy_sighted_around_branch" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -465,17 +461,17 @@
 
 					<div class="form-group">
 						<label>When was the last review date? </label>
-						<input class="form-control" type="date" placeholder="" />
+						<input class="form-control" name="last_review_date" type="date" placeholder="" />
 					</div>
 
 					<div class="form-group">
 						<label>Are staff aware of the safety policy? </label>
-						<input class="form-control" type="text" placeholder="Interview a staff" />
+						<input class="form-control" name="staff_aware_safety_policy" type="text" placeholder="Interview a staff" />
 					</div>
                    
 					<div class="form-group">
 						<label>Other comment  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
 					</div>
 					
 				
@@ -492,21 +488,21 @@
 					</div>
 					 
 				</div>
-				<form>
+				<form  id="incident_accident" class="Administration_Procedure">
                     <div class="form-group">
 						<label>Request for HSE incident log</label>
-						<input class="form-control" type="text" placeholder="Go through… " />
+						<input class="form-control" name="Request_HSE_incident_log" type="text" placeholder="Go through… " />
 					</div>
 
                     <div class="form-group">
 						<label>Last recorded incident </label>
-						<input class="form-control" type="date" placeholder="" />
+						<input class="form-control" name="Last_recorded_incident" type="date" placeholder="" />
 					</div>
 
 
                     <div class="form-group">
                         <label>Has there been an occupational incident/accident? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="occupational_incident/accident" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -515,12 +511,12 @@
 
 					<div class="form-group">
 						<label>Which regulatory agencies are occupational incidents/accidents reported to?  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="regulatory_agencies_occupational_incidents/accidents_reported_to" type="text" placeholder="" />
 					</div>
 
 					<div class="form-group">
 						<label>Other comment  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
 					</div>
 					
 				
@@ -537,10 +533,10 @@
 					</div>
 					 
 				</div>
-				<form>
+				<form  id="waste_management" class="Administration_Procedure">
                     <div class="form-group">
                         <label>Is it a Lawma approved contractor that picks your waste?  </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="Lawma_approved_contractor_picks_waste" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -549,17 +545,17 @@
 
                     <div class="form-group">
 						<label>Name of the Lawma Contractor?  </label>
-						<input class="form-control" type="text" placeholder=" " />
+						<input class="form-control" name="name_lawma_contractor" type="text" placeholder=" " />
 					</div>
 
                     <div class="form-group">
 						<label>How frequently is waste picked up?  </label>
-						<input class="form-control" type="text" placeholder=" " />
+						<input class="form-control" name="frequently_waste_picked" type="text" placeholder=" " />
 					</div>
 
                     <div class="form-group">
                         <label>Is waste segregation practiced here?  </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="waste_segregation_practiced" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -568,7 +564,7 @@
 
                     <div class="form-group">
                         <label>Can you sight waste bins around the premises?  </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="sight_waste_bins_around_premises" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -577,7 +573,7 @@
 
 					<div class="form-group">
 						<label>Other comment  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
 					</div>
 					
 				
@@ -594,10 +590,10 @@
 					</div>
 					 
 				</div>
-				<form>
+				<form  id="Training" class="Administration_Procedure">
                     <div class="form-group">
                         <label>Has a safety training been conducted recently?  </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="safety_training_been_conducted_recently" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -606,12 +602,12 @@
 
                     <div class="form-group">
 						<label>What was the training topic? </label>
-						<input class="form-control" type="text" placeholder=" " />
+						<input class="form-control" name="training_topic" type="text" placeholder=" " />
 					</div>
 
                     <div class="form-group">
                         <label>Was it documented?  </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="documented" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -620,7 +616,7 @@
 
                     <div class="form-group">
                         <label>Did you sight a training attendance or a sample certificate issued?</label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="training attendance" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes, training attendance">Yes, training attendance </option>
                                 <option value="Yes, certificate">Yes, certificate</option>
@@ -631,7 +627,7 @@
 
 					<div class="form-group">
 						<label>Other comment  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
 					</div>
 					
 				
@@ -648,10 +644,10 @@
 					</div>
 					 
 				</div>
-				<form>
+				<form  id="safe_system" class="Administration_Procedure">
                     <div class="form-group">
                         <label>Is there an operational safety manual informing on safe practices within the facility? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="operational_safety_manual_informing_safe_practices_facility" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -660,7 +656,7 @@
 
                     <div class="form-group">
                         <label>Is there an updated safety risk assessment of the facility?  </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="updated_safety_risk_assessment_facility" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -669,12 +665,12 @@
 
                     <div class="form-group">
 						<label>When was the last review date? </label>
-						<input class="form-control" type="date" placeholder=" " />
+						<input class="form-control" name="last_review_date" type="date" placeholder=" " />
 					</div>
 
                     <div class="form-group">
                         <label>Is the toolbox talk been conducted with facility contractors?  </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="toolbox_conducted_facility_contractors" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -683,7 +679,7 @@
 
                     <div class="form-group">
                         <label>Is toolbox talk documented? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="toolbox_talk_documented" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -692,12 +688,12 @@
 
                     <div class="form-group">
 						<label>Date of last toolbox talk?</label>
-						<input class="form-control" type="date" placeholder=" " />
+						<input class="form-control" type="date" name="date_last_toolbox" placeholder=" " />
 					</div>
 
                     <div class="form-group">
                         <label>Are worker's chairs and tables ergonomic friendly? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name=" worker_chairs_tables_ergonomic_friendly" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes, they are">Yes, they are</option>
                                 <option value="No, only chairse">No, only chairs</option>
@@ -709,7 +705,7 @@
 
                     <div class="form-group">
                         <label>Are workers computer screen excessively bright?   </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="workers_computer_screen_excessively_bright" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -718,7 +714,7 @@
 
 					<div class="form-group">
 						<label>Other comment  </label>
-						<input class="form-control" type="text" placeholder="" />
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
 					</div>
 					
 				
@@ -736,10 +732,10 @@
 					</div>
 					 
 				</div>
-				<form>
+				<form  id="permit_work" class="Administration_Procedure">
                     <div class="form-group">
                         <label>Is there a permit-to-work process for contractors? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="permit_to_work_process_contractor" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -748,7 +744,7 @@
 
                     <div class="form-group">
                         <label>Is this process documented?  </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="process_documented" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -757,7 +753,7 @@
 
                     <div class="form-group">
 						<label>What date was the last permit-to-work issued?</label>
-						<input class="form-control" type="date" placeholder=" " />
+						<input class="form-control" name="date_last_permit_work_issued" type="date" placeholder=" " />
 					</div>
 
 				
@@ -774,15 +770,15 @@
 					</div>
 					 
 				</div>
-				<form>
+				<form  id="communication" class="Administration_Procedure">
                     <div class="form-group">
 						<label>How is safety communication done within the bank? </label>
-						<input class="form-control" type="text" placeholder=" " />
+						<input class="form-control" name="safety_communication_bank" type="text" placeholder=" " />
 					</div>
 
                     <div class="form-group">
                         <label>Did you sight evidence?</label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="sight_evidence" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -791,12 +787,12 @@
 
                     <div class="form-group">
 						<label>Date of last safety communication post </label>
-						<input class="form-control" type="date" placeholder=" " />
+						<input class="form-control" name=" safety_communication_post" type="date" placeholder=" " />
 					</div>
 
                     <div class="form-group">
                         <label>Was it a monthly or weekly safety tip/digest? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="monthly_weekly_safety_tip/digest" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="A monthly tip/digest">A monthly tip/digest</option>
                                 <option value="A weekly tip/digest">A weekly tip/digest</option>
@@ -806,7 +802,7 @@
 
                     <div class="form-group">
 						<label>Other comment </label>
-						<input class="form-control" type="text" placeholder=" " />
+						<input class="form-control" name="other_comment" type="text" placeholder=" " />
 					</div>
 
 				
@@ -823,10 +819,10 @@
 					</div>
 					 
 				</div>
-				<form>
+				<form  id="contractors_management" class="Administration_Procedure">
                     <div class="form-group">
                         <label>Is there a documented contractor safety policy in place? </label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name="documented_contractor_safety_policy_place" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
@@ -835,7 +831,7 @@
 
                     <div class="form-group">
                         <label>Did you sight any contractor using adequate PPE during the audit?</label>
-                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                        <select class="custom-select2 form-control" name=" sight_contractor_adequate_PPE_audit" style="width: 100%; height: 38px">
                                 <option value="">Select</option>
                                 <option value="Yes I didt">Yes I did</option>
                                 <option value="No I did not">No I did not</option>
@@ -846,12 +842,12 @@
 
                     <div class="form-group">
 						<label>Are cleaners trained to conduct first aid? </label>
-						<input class="form-control" type="text" placeholder="Interview a cleaner" />
+						<input class="form-control" type="text" name="cleaners_trained_conduct_first_aid" placeholder="Interview a cleaner" />
 					</div>
 
                     <div class="form-group">
 						<label>Other comment </label>
-						<input class="form-control" type="text" placeholder=" " />
+						<input class="form-control" name="other_comment" type="text" placeholder=" " />
 					</div>
 
                     <div class="button">

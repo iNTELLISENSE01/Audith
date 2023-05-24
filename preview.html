@@ -295,34 +295,34 @@
 					</div>
 					 
 				</div>
-				<form>
+				<form id="bank_audit" class="introduction">
 					<div class="form-group">
 						<label>Date of safety audit </label>
-						<input class="form-control" type="date" placeholder="" />
+						<input class="form-control" name="Date_safety_audit "  type="date" placeholder="" />
 					</div>
 					<div class="form-group">
-						<label>Safety audit report for Bank? </label>
-						<input class="form-control" value="" type="text" />
+						<label>Safety audit report for? </label>
+						<input class="form-control" name="Safety_audit_report_for " value="" type="text" placeholder="Bank name" />
 					</div>
 					<div class="form-group">
 						<label>Bank full address </label>
-						<input class="form-control" value="" type="text" />
+						<input class="form-control" name="bank_full_address" value="" type="text" />
 					</div>
 					<div class="form-group">
 						<label>Name of safety auditor I </label>
-						<input class="form-control" value="" type="text" />
+						<input class="form-control" name="name_safety_audit_1" value="" type="text" />
 					</div>
 					<div class="form-group">
 						<label>Name of safety auditor II</label>
-						<input class="form-control" value="" type="text" />
+						<input class="form-control"  name="name_safety_audit_2" value="" type="text" />
 					</div>
 					<div class="form-group">
 						<label>Name of bank assessment participant</label>
-						<input class="form-control" value="" type="text" />
+						<input class="form-control"  name="name_bank_assessment_participant" value="" type="text" />
 					</div>
 					<div class="form-group">
 						<label>Position of bank assessment participant </label>
-						<input class="form-control" value="" type="text" />
+						<input class="form-control" name="position_bank_assessment_participant" value="" type="text" />
 					</div>
  
 				</form>
@@ -391,9 +391,7 @@
 						<input class="form-control" name="safety_concern" value="" type="text" />
 					</div>
 				
-					<div>
-						<a href="section1.html" onclick="submit()"><button type="button" class="btn btn-primary">Next</button></a>
-					</div>
+					
 				</form>
 
 			</div>
@@ -404,577 +402,576 @@
 					<h2 class="h3 mb-0"> Administration and Procedure </h2>
 				</div>
 				
-				<!-- horizontal Basic Forms Start -->
-				<div class="pd-20 card-box mb-30">
-					<div class="clearfix">
-						<div class="pull-left">
-							<h4 class="text-blue h4">Section 1</h4>
-							<p class="mb-30">Part 1: Management Review</p>
-						</div>
-						 
+					<!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<h4 class="text-blue h4">Section 1</h4>
+						<p class="mb-30">Part 1: Management Review</p>
 					</div>
-					<form>
-						<div class="form-group">
-							<label>When are HSE meetings conducted?  </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-						<div class="form-group">
-							<label>Evidence of what was discussed? </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-						<div class="form-group">
-							<label>Date of the last meeting held? </label>
-							<input class="form-control" type="date" placeholder="" />
-						</div>
-						<div class="form-group">
-							<label>Other comment  </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-						
-					
-					</form>
-					
+					 
 				</div>
-				<!-- horizontal Basic Forms End -->
-	
-				<!-- horizontal Basic Forms Start -->
-				<div class="pd-20 card-box mb-30">
-					<div class="clearfix">
-						<div class="pull-left">
-							<p class="mb-30">Part 2: Insurance (Liability Insurance Certificate)</p>
-						</div>
-						 
+				<form id="Management_Review" class="Administration_Procedure">
+					<div class="form-group">
+						<label>When are HSE meetings conducted?  </label>
+						<input class="form-control" name="hse_meeting" type="text" placeholder="" />
 					</div>
-					<form>
-						<div class="form-group">
-							<label>Is there evidence of workers compensation for workers?</label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-	
-						<div class="form-group">
-							<label>Is there evidence of workers compensation for workers?</label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>if yes, when was it paid last?  </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-	
-						<div class="form-group">
-							<label>Is there evidence of building occupancy insurance? </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>if yes, when was it paid last? </label>
-							<input class="form-control" type="date" placeholder="" />
-						</div>
-						<div class="form-group">
-							<label>Other comment  </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-						
-					
-					</form>
-					
-				</div>
-				<!-- horizontal Basic Forms End -->
-	
-				<!-- horizontal Basic Forms Start -->
-				<div class="pd-20 card-box mb-30">
-					<div class="clearfix">
-						<div class="pull-left">
-							<p class="mb-30">Part 3: Emergency Procedure</p>
-						</div>
-						 
+					<div class="form-group">
+						<label>Evidence of what was discussed? </label>
+						<input class="form-control" name="evidence_discussed" type="text" placeholder="" />
 					</div>
-					<form>
-						<div class="form-group">
-							<label>Is there evidence of a documented emergency response plan? </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>When was the last review date? </label>
-							<input class="form-control" type="date" placeholder="" />
-						</div>
-	
-						<div class="form-group">
-							<label>Has an emergency drill been conducted lately?  </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Date of emergency drill? </label>
-							<input class="form-control" type="date" placeholder="" />
-						</div>
-	
-	
-						<div class="form-group">
-							<label>Is there evidence of appointed fire wardens?</label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Is there a registered retainers hospital for the branch?</label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Name of Hospital </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-						<div class="form-group">
-							<label>Other comment  </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-						
-					
-					</form>
-					
-				</div>
-				<!-- horizontal Basic Forms End -->
-	
-				 <!-- horizontal Basic Forms Start -->
-				<div class="pd-20 card-box mb-30">
-					<div class="clearfix">
-						<div class="pull-left">
-							<p class="mb-30">Part 4: Safety Policy</p>
-						</div>
-						 
+					<div class="form-group">
+						<label>Date of the last meeting held? </label>
+						<input class="form-control" name="date_last_meeting" type="date" placeholder="" />
 					</div>
-					<form>
-						<div class="form-group">
-							<label>Is the safety policy sighted around the branch? </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>When was the last review date? </label>
-							<input class="form-control" type="date" placeholder="" />
-						</div>
-	
-						<div class="form-group">
-							<label>Are staff aware of the safety policy? </label>
-							<input class="form-control" type="text" placeholder="Interview a staff" />
-						</div>
-					   
-						<div class="form-group">
-							<label>Other comment  </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-						
-					
-					</form>
-					
-				</div>
-				<!-- horizontal Basic Forms End -->
-	
-				 <!-- horizontal Basic Forms Start -->
-				<div class="pd-20 card-box mb-30">
-					<div class="clearfix">
-						<div class="pull-left">
-							<p class="mb-30">Part 5: Incident & Accident</p>
-						</div>
-						 
+					<div class="form-group">
+						<label>Other comment  </label>
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
 					</div>
-					<form>
-						<div class="form-group">
-							<label>Request for HSE incident log</label>
-							<input class="form-control" type="text" placeholder="Go through… " />
-						</div>
-	
-						<div class="form-group">
-							<label>Last recorded incident </label>
-							<input class="form-control" type="date" placeholder="" />
-						</div>
-	
-	
-						<div class="form-group">
-							<label>Has there been an occupational incident/accident? </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Which regulatory agencies are occupational incidents/accidents reported to?  </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-	
-						<div class="form-group">
-							<label>Other comment  </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-						
 					
-					</form>
-					
-				</div>
-				<!-- horizontal Basic Forms End -->
-	
-				 <!-- horizontal Basic Forms Start -->
-				<div class="pd-20 card-box mb-30">
-					<div class="clearfix">
-						<div class="pull-left">
-							<p class="mb-30">Part 6: Waste Management</p>
-						</div>
-						 
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 2: Insurance (Liability Insurance Certificate)</p>
 					</div>
-					<form>
-						<div class="form-group">
-							<label>Is it a Lawma approved contractor that picks your waste?  </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Name of the Lawma Contractor?  </label>
-							<input class="form-control" type="text" placeholder=" " />
-						</div>
-	
-						<div class="form-group">
-							<label>How frequently is waste picked up?  </label>
-							<input class="form-control" type="text" placeholder=" " />
-						</div>
-	
-						<div class="form-group">
-							<label>Is waste segregation practiced here?  </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Can you sight waste bins around the premises?  </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Other comment  </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-						
-					
-					</form>
-					
+					 
 				</div>
-				<!-- horizontal Basic Forms End -->
-	
-				<!-- horizontal Basic Forms Start -->
-				<div class="pd-20 card-box mb-30">
-					<div class="clearfix">
-						<div class="pull-left">
-							<p class="mb-30">Part 7: Training</p>
-						</div>
-						 
+				<form id="Insurance" class="Administration_Procedure" >
+
+                    <div class="form-group">
+                        <label>Is there evidence of workers compensation for workers?</label>
+                        <select class="custom-select2 form-control" name="evidence_workers_compensation" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+					<div class="form-group">
+						<label>if yes, when was it paid last?  </label>
+						<input class="form-control" name="when_paid_last" type="text" placeholder="" />
 					</div>
-					<form>
-						<div class="form-group">
-							<label>Has a safety training been conducted recently?  </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>What was the training topic? </label>
-							<input class="form-control" type="text" placeholder=" " />
-						</div>
-	
-						<div class="form-group">
-							<label>Was it documented?  </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Did you sight a training attendance or a sample certificate issued?</label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes, training attendance">Yes, training attendance </option>
-									<option value="Yes, certificate">Yes, certificate</option>
-									<option value="None">None</option>
-									<option value="Both">Both </option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Other comment  </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-						
-					
-					</form>
-					
-				</div>
-				<!-- horizontal Basic Forms End -->
-	
-				<!-- horizontal Basic Forms Start -->
-				<div class="pd-20 card-box mb-30">
-					<div class="clearfix">
-						<div class="pull-left">
-							<p class="mb-30">Part 8: Safe System of work</p>
-						</div>
-						 
+
+                    <div class="form-group">
+                        <label>Is there evidence of building occupancy insurance? </label>
+                        <select class="custom-select2 form-control" name="evidence_building_occupancy_insurance" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+					<div class="form-group">
+						<label>if yes, when was it paid last? </label>
+						<input class="form-control" name="when_paid_last" type="date" placeholder="" />
 					</div>
-					<form>
-						<div class="form-group">
-							<label>Is there an operational safety manual informing on safe practices within the facility? </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Is there an updated safety risk assessment of the facility?  </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>When was the last review date? </label>
-							<input class="form-control" type="date" placeholder=" " />
-						</div>
-	
-						<div class="form-group">
-							<label>Is the toolbox talk been conducted with facility contractors?  </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Is toolbox talk documented? </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Date of last toolbox talk?</label>
-							<input class="form-control" type="date" placeholder=" " />
-						</div>
-	
-						<div class="form-group">
-							<label>Are worker's chairs and tables ergonomic friendly? </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes, they are">Yes, they are</option>
-									<option value="No, only chairse">No, only chairs</option>
-									<option value="No, only tables">No, only tables</option>
-									<option value="None ">None  </option>
-									<option value="Some are ">Some are  </option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Are workers computer screen excessively bright?   </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Other comment  </label>
-							<input class="form-control" type="text" placeholder="" />
-						</div>
-						
-					
-					</form>
-					
-				</div>
-				<!-- horizontal Basic Forms End -->
-	
-	
-				 <!-- horizontal Basic Forms Start -->
-				<div class="pd-20 card-box mb-30">
-					<div class="clearfix">
-						<div class="pull-left">
-							<p class="mb-30">Part 9: Permit to work</p>
-						</div>
-						 
+					<div class="form-group">
+						<label>Other comment  </label>
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
 					</div>
-					<form>
-						<div class="form-group">
-							<label>Is there a permit-to-work process for contractors? </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Is this process documented?  </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>What date was the last permit-to-work issued?</label>
-							<input class="form-control" type="date" placeholder=" " />
-						</div>
-	
 					
-					</form>
-					
-				</div>
-				<!-- horizontal Basic Forms End -->
-	
-				<!-- horizontal Basic Forms Start -->
-				<div class="pd-20 card-box mb-30">
-					<div class="clearfix">
-						<div class="pull-left">
-							<p class="mb-30">Part 10: Communication (Safety)</p>
-						</div>
-						 
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 3: Emergency Procedure</p>
 					</div>
-					<form>
-						<div class="form-group">
-							<label>How is safety communication done within the bank? </label>
-							<input class="form-control" type="text" placeholder=" " />
-						</div>
-	
-						<div class="form-group">
-							<label>Did you sight evidence?</label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Date of last safety communication post </label>
-							<input class="form-control" type="date" placeholder=" " />
-						</div>
-	
-						<div class="form-group">
-							<label>Was it a monthly or weekly safety tip/digest? </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="A monthly tip/digest">A monthly tip/digest</option>
-									<option value="A weekly tip/digest">A weekly tip/digest</option>
-									<option value="None">None</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Other comment </label>
-							<input class="form-control" type="text" placeholder=" " />
-						</div>
-	
-					
-					</form>
-					
+					 
 				</div>
-				<!-- horizontal Basic Forms End -->
-	
-				 <!-- horizontal Basic Forms Start -->
-				<div class="pd-20 card-box mb-30">
-					<div class="clearfix">
-						<div class="pull-left">
-							<p class="mb-30">Part 11: Contractors Management</p>
-						</div>
-						 
+				<form  id="Emergency_Procedure" class="Administration_Procedure" >
+                    <div class="form-group">
+                        <label>Is there evidence of a documented emergency response plan? </label>
+                        <select class="custom-select2 form-control" name="evidence_documented_emergency_response_plan" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+					<div class="form-group">
+						<label>When was the last review date? </label>
+						<input class="form-control" name="last_review_date" type="date" placeholder="" />
 					</div>
-					<form>
-						<div class="form-group">
-							<label>Is there a documented contractor safety policy in place? </label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes">Yes</option>
-									<option value="No">No</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Did you sight any contractor using adequate PPE during the audit?</label>
-							<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-									<option value="">Select</option>
-									<option value="Yes I didt">Yes I did</option>
-									<option value="No I did not">No I did not</option>
-									<option value="Few wore complete PPE">Few wore complete PPE</option>
-									<option value="None wore PPE">None wore PPE</option>
-							</select>
-						</div>
-	
-						<div class="form-group">
-							<label>Are cleaners trained to conduct first aid? </label>
-							<input class="form-control" type="text" placeholder="Interview a cleaner" />
-						</div>
-	
-						<div class="form-group">
-							<label>Other comment </label>
-							<input class="form-control" type="text" placeholder=" " />
-						</div>
-	
+
+                    <div class="form-group">
+                        <label>Has an emergency drill been conducted lately?  </label>
+                        <select class="custom-select2 form-control" name="emergency_drill_been_conducted_lately" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+						<label>Date of emergency drill? </label>
+						<input class="form-control" name="Date_emergency_drill" type="date" placeholder="" />
+					</div>
+
+
+                    <div class="form-group">
+                        <label>Is there evidence of appointed fire wardens?</label>
+                        <select class="custom-select2 form-control" name="evidence_appointed_fire_wardens" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Is there a registered retainers hospital for the branch?</label>
+                        <select class="custom-select2 form-control" name="registered_retainers_hospital_branch" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+					<div class="form-group">
+						<label>Name of Hospital </label>
+						<input class="form-control" name="Name_Hospital" type="text" placeholder="" />
+					</div>
+					<div class="form-group">
+						<label>Other comment  </label>
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
+					</div>
 					
-	
-					</form>
-					
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+             <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 4: Safety Policy</p>
+					</div>
+					 
 				</div>
-				<!-- horizontal Basic Forms End -->
+				<form  id="Safety_Policy" class="Administration_Procedure">
+                    <div class="form-group">
+                        <label>Is the safety policy sighted around the branch? </label>
+                        <select class="custom-select2 form-control" name="safety_policy_sighted_around_branch" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+					<div class="form-group">
+						<label>When was the last review date? </label>
+						<input class="form-control" name="last_review_date" type="date" placeholder="" />
+					</div>
+
+					<div class="form-group">
+						<label>Are staff aware of the safety policy? </label>
+						<input class="form-control" name="staff_aware_safety_policy" type="text" placeholder="Interview a staff" />
+					</div>
+                   
+					<div class="form-group">
+						<label>Other comment  </label>
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
+					</div>
+					
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+             <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 5: Incident & Accident</p>
+					</div>
+					 
+				</div>
+				<form  id="incident_accident" class="Administration_Procedure">
+                    <div class="form-group">
+						<label>Request for HSE incident log</label>
+						<input class="form-control" name="Request_HSE_incident_log" type="text" placeholder="Go through… " />
+					</div>
+
+                    <div class="form-group">
+						<label>Last recorded incident </label>
+						<input class="form-control" name="Last_recorded_incident" type="date" placeholder="" />
+					</div>
+
+
+                    <div class="form-group">
+                        <label>Has there been an occupational incident/accident? </label>
+                        <select class="custom-select2 form-control" name="occupational_incident/accident" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+					<div class="form-group">
+						<label>Which regulatory agencies are occupational incidents/accidents reported to?  </label>
+						<input class="form-control" name="regulatory_agencies_occupational_incidents/accidents_reported_to" type="text" placeholder="" />
+					</div>
+
+					<div class="form-group">
+						<label>Other comment  </label>
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
+					</div>
+					
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+             <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 6: Waste Management</p>
+					</div>
+					 
+				</div>
+				<form  id="waste_management" class="Administration_Procedure">
+                    <div class="form-group">
+                        <label>Is it a Lawma approved contractor that picks your waste?  </label>
+                        <select class="custom-select2 form-control" name="Lawma_approved_contractor_picks_waste" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+						<label>Name of the Lawma Contractor?  </label>
+						<input class="form-control" name="name_lawma_contractor" type="text" placeholder=" " />
+					</div>
+
+                    <div class="form-group">
+						<label>How frequently is waste picked up?  </label>
+						<input class="form-control" name="frequently_waste_picked" type="text" placeholder=" " />
+					</div>
+
+                    <div class="form-group">
+                        <label>Is waste segregation practiced here?  </label>
+                        <select class="custom-select2 form-control" name="waste_segregation_practiced" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Can you sight waste bins around the premises?  </label>
+                        <select class="custom-select2 form-control" name="sight_waste_bins_around_premises" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+					<div class="form-group">
+						<label>Other comment  </label>
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
+					</div>
+					
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 7: Training</p>
+					</div>
+					 
+				</div>
+				<form  id="Training" class="Administration_Procedure">
+                    <div class="form-group">
+                        <label>Has a safety training been conducted recently?  </label>
+                        <select class="custom-select2 form-control" name="safety_training_been_conducted_recently" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+						<label>What was the training topic? </label>
+						<input class="form-control" name="training_topic" type="text" placeholder=" " />
+					</div>
+
+                    <div class="form-group">
+                        <label>Was it documented?  </label>
+                        <select class="custom-select2 form-control" name="documented" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Did you sight a training attendance or a sample certificate issued?</label>
+                        <select class="custom-select2 form-control" name="training attendance" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes, training attendance">Yes, training attendance </option>
+                                <option value="Yes, certificate">Yes, certificate</option>
+                                <option value="None">None</option>
+                                <option value="Both">Both </option>
+                        </select>
+                    </div>
+
+					<div class="form-group">
+						<label>Other comment  </label>
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
+					</div>
+					
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 8: Safe System of work</p>
+					</div>
+					 
+				</div>
+				<form  id="safe_system" class="Administration_Procedure">
+                    <div class="form-group">
+                        <label>Is there an operational safety manual informing on safe practices within the facility? </label>
+                        <select class="custom-select2 form-control" name="operational_safety_manual_informing_safe_practices_facility" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Is there an updated safety risk assessment of the facility?  </label>
+                        <select class="custom-select2 form-control" name="updated_safety_risk_assessment_facility" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+						<label>When was the last review date? </label>
+						<input class="form-control" name="last_review_date" type="date" placeholder=" " />
+					</div>
+
+                    <div class="form-group">
+                        <label>Is the toolbox talk been conducted with facility contractors?  </label>
+                        <select class="custom-select2 form-control" name="toolbox_conducted_facility_contractors" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Is toolbox talk documented? </label>
+                        <select class="custom-select2 form-control" name="toolbox_talk_documented" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+						<label>Date of last toolbox talk?</label>
+						<input class="form-control" type="date" name="date_last_toolbox" placeholder=" " />
+					</div>
+
+                    <div class="form-group">
+                        <label>Are worker's chairs and tables ergonomic friendly? </label>
+                        <select class="custom-select2 form-control" name=" worker_chairs_tables_ergonomic_friendly" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes, they are">Yes, they are</option>
+                                <option value="No, only chairse">No, only chairs</option>
+                                <option value="No, only tables">No, only tables</option>
+                                <option value="None ">None  </option>
+                                <option value="Some are ">Some are  </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are workers computer screen excessively bright?   </label>
+                        <select class="custom-select2 form-control" name="workers_computer_screen_excessively_bright" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+					<div class="form-group">
+						<label>Other comment  </label>
+						<input class="form-control" name="other_comment" type="text" placeholder="" />
+					</div>
+					
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+
+             <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 9: Permit to work</p>
+					</div>
+					 
+				</div>
+				<form  id="permit_work" class="Administration_Procedure">
+                    <div class="form-group">
+                        <label>Is there a permit-to-work process for contractors? </label>
+                        <select class="custom-select2 form-control" name="permit_to_work_process_contractor" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Is this process documented?  </label>
+                        <select class="custom-select2 form-control" name="process_documented" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+						<label>What date was the last permit-to-work issued?</label>
+						<input class="form-control" name="date_last_permit_work_issued" type="date" placeholder=" " />
+					</div>
+
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 10: Communication (Safety)</p>
+					</div>
+					 
+				</div>
+				<form  id="communication" class="Administration_Procedure">
+                    <div class="form-group">
+						<label>How is safety communication done within the bank? </label>
+						<input class="form-control" name="safety_communication_bank" type="text" placeholder=" " />
+					</div>
+
+                    <div class="form-group">
+                        <label>Did you sight evidence?</label>
+                        <select class="custom-select2 form-control" name="sight_evidence" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+						<label>Date of last safety communication post </label>
+						<input class="form-control" name=" safety_communication_post" type="date" placeholder=" " />
+					</div>
+
+                    <div class="form-group">
+                        <label>Was it a monthly or weekly safety tip/digest? </label>
+                        <select class="custom-select2 form-control" name="monthly_weekly_safety_tip/digest" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="A monthly tip/digest">A monthly tip/digest</option>
+                                <option value="A weekly tip/digest">A weekly tip/digest</option>
+                                <option value="None">None</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+						<label>Other comment </label>
+						<input class="form-control" name="other_comment" type="text" placeholder=" " />
+					</div>
+
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+             <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 11: Contractors Management</p>
+					</div>
+					 
+				</div>
+				<form  id="contractors_management" class="Administration_Procedure">
+                    <div class="form-group">
+                        <label>Is there a documented contractor safety policy in place? </label>
+                        <select class="custom-select2 form-control" name="documented_contractor_safety_policy_place" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Did you sight any contractor using adequate PPE during the audit?</label>
+                        <select class="custom-select2 form-control" name=" sight_contractor_adequate_PPE_audit" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes I didt">Yes I did</option>
+                                <option value="No I did not">No I did not</option>
+                                <option value="Few wore complete PPE">Few wore complete PPE</option>
+                                <option value="None wore PPE">None wore PPE</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+						<label>Are cleaners trained to conduct first aid? </label>
+						<input class="form-control" type="text" name="cleaners_trained_conduct_first_aid" placeholder="Interview a cleaner" />
+					</div>
+
+                    <div class="form-group">
+						<label>Other comment </label>
+						<input class="form-control" name="other_comment" type="text" placeholder=" " />
+					</div>
+
+                  
+
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+
+            
 
 
 				<!-- end section one  -->
@@ -986,362 +983,354 @@
 						<h2 class="h3 mb-0"> Statutory Compliance </h2>
 					</div>
 					
-					<!-- horizontal Basic Forms Start -->
-					<div class="pd-20 card-box mb-30">
-						<div class="clearfix">
-							<div class="pull-left">
-								<h4 class="text-blue h4">Section 2</h4>
-								<p class="mb-30">Part 1: Reporting of Injuries, Diseases & Dangerous Occurrences</p>
-							</div>
-							 
-						</div>
-						<form>
-							<div class="form-group">
-								<label>Has there been reporting of injuries, diseases & dangerous occurences to the relevant regulatory body? </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-							</div>
-		
-							<div class="form-group">
-								<label>Date of last reported incident? </label>
-								<input class="form-control" type="date" placeholder="" />
-							</div>
-							
-						
-						</form>
-						
+							<!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<h4 class="text-blue h4">Section 2</h4>
+						<p class="mb-30">Part 1: Reporting of Injuries, Diseases & Dangerous Occurrences</p>
 					</div>
-					<!-- horizontal Basic Forms End -->
-		
-					<!-- horizontal Basic Forms Start -->
-					<div class="pd-20 card-box mb-30">
-						<div class="clearfix">
-							<div class="pull-left">
-								<p class="mb-30">Part 2: First Aid</p>
-							</div>
-							 
-						</div>
-						<form>
-							
-							<div class="form-group">
-								<label>Is there a sufficient first aid box in the facility? </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-							</div>
-		
-							<div class="form-group">
-								<label>Is there a trained first aider in the facility?  </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-							</div>
-		
-							<div class="form-group">
-								<label>What is the last recorded item used in the first aid box?  </label>
-								<input class="form-control" type="text" placeholder="" />
-							</div>
-		
-							<div class="form-group">
-								<label>Is there any expired item in the first aid box</label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-							</div>
-		
-							<div class="form-group">
-								<label>Is there any other first-aid equipment </label>
-								<select class="custom-select2 form-control" multiple="multiple" style="width: 100%">
-										<option value="Strectcher">Strectcher</option>
-										<option value="Automatic External Defibrillator">Automatic External Defibrillator</option>
-										<option value="Oxygen">Oxygen</option>
-										<option value="Wheel Chair">Wheel Chair</option>
-										<option value="None of the above">None of the above </option>
-										<option value="All of the above ">All of the above </option>
-								</select>
-							</div>
-		
-							<div class="form-group">
-								<label>Is there a form for issued first aid treatment in the first aid box?</label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-							</div>
-		
-						
-						</form>
-						
+					 
+				</div>
+				<form  id="reporting_injuries" class="Statutory_Compliance">
+                    <div class="form-group">
+                        <label>Has there been reporting of injuries, diseases & dangerous occurences to the relevant regulatory body? </label>
+                        <select class="custom-select2 form-control" name="reporting_injuries_regulatory_body" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+					<div class="form-group">
+						<label>Date of last reported incident? </label>
+						<input class="form-control" name="Date_reported_incident" type="date" placeholder="" />
 					</div>
-					<!-- horizontal Basic Forms End -->
-		
-					<!-- horizontal Basic Forms Start -->
-					<div class="pd-20 card-box mb-30">
-						<div class="clearfix">
-							<div class="pull-left">
-								<p class="mb-30">Part 3: Fire Safety</p>
-							</div>
-							 
-						</div>
-						<form>
-							<div class="form-group">
-								<label>Are fire extinguishers present in the facility?</label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-							</div>
-		
-							<div class="form-group">
-								<label>What classes of fire extinguishers are in the facility? </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="DCP/ABC only">DCP/ABC only</option>
-										<option value="CO2 only ">CO2 only</option>
-										<option value="Both DCP/ABC/CO2">Both DCP/ABC/CO2</option>
-								</select>
-							</div>
-		
-							<div class="form-group">
-								<label>When is the expiring date of the fire extinguishers within the facility?</label>
-								<input class="form-control" type="date" placeholder="" />
-							</div>
-		
-							<div class="form-group">
-								<label>When were the fire extinguishers serviced last? </label>
-								<input class="form-control" type="date" placeholder="" /> 
-								<label> choose which fire equipment</label>
-									<select class="custom-select2 form-control" multiple="multiple" style="width: 100%">
-											<option value="Fire extinguisher ">Fire extinguisher </option>
-											<option value="Fire hose reel ">Fire hose reel </option>
-											<option value="Smoke detector ">Smoke detector </option>
-											<option value="Water spriklers ">Water spriklers </option>
-									</select>
-								
-							</div>
-		
-		
-							<div class="form-group">
-								<label>Is there a fire service certificate for the year 2023? </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-							</div>
-		
-							<div class="form-group">
-								<label>What other fire-fighting equipment are installed in the facility?   </label>
-								<select class="custom-select2 form-control" multiple="multiple" style="width: 100%">
-										<option value="Fire hose reels ">Fire hose reels </option>
-										<option value="Water sprinklers ">Water sprinklers </option>
-										<option value="Smoke detectors">Smoke detectors </option>
-										<option value="None of the above">None of the above </option>
-										<option value="All of the above ">All of the above </option>
-								</select>
-							</div>
-		
-							<div class="form-group">
-								<label>The fire extinguishers within the premises are they hung on the wall? and without obstruction? </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-								<label>if no, where is it placed on the floor? </label>
-								<input class="form-control" type="text" placeholder="" />
-							</div>
-		
-							<div class="form-group">
-								<label>Are they free of obstruction? </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-								<label>if no, where is the fire extinguisher obstructed? </label>
-								<input class="form-control" type="text" placeholder="" />
-							</div>
-							
-						
-						</form>
-						
+					
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 2: First Aid</p>
 					</div>
-					<!-- horizontal Basic Forms End -->
-		
-					 <!-- horizontal Basic Forms Start -->
-					<div class="pd-20 card-box mb-30">
-						<div class="clearfix">
-							
-							<div class="pull-left">
-								<p class="mb-30">Part 4: Lifting Operations and Equipment</p>
-							</div>
-							 
-						</div>
-						<form>
-		
-							<div class="form-group">
-								<label>Are lifting equipment provided for workers when lifting and conveying items to a designated point?  </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-							</div>
-		
-							<div class="form-group">
-								<label>Did you sight any lifting equipment? </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-							</div>
-							
-								
-						
-						   
-							
-						</form>
-						
+					 
+				</div>
+				<form  id="first_aid" class="Statutory_Compliance" >
+					
+                    <div class="form-group">
+                        <label>Is there a sufficient first aid box in the facility? </label>
+                        <select class="custom-select2 form-control" name=" sufficient_facility" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+					<div class="form-group">
+						<label>What is the last recorded item used in the first aid box?  </label>
+						<input class="form-control" type="text" name=" last_recorded_first_box?" placeholder="" />
 					</div>
-					<!-- horizontal Basic Forms End -->
-		
-					 <!-- horizontal Basic Forms Start -->
-					<div class="pd-20 card-box mb-30">
-						<div class="clearfix">
-							<div class="pull-left">
-								<p class="mb-30">Part 5: Electricity at work</p>
-							</div>
-							 
-						</div>
-						<form>
-		
-							<div class="form-group">
-								<label>Are electrical distribution boxes securely locked? </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-								<label>if no, where is not locked? </label>
-								<input class="form-control" type="text" placeholder="" />
-							</div>
-		
-							<div class="form-group">
-								<label>Did you sight any trailing cables within the facility?</label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-								<label>If yes, where was it sighted </label>
-								<input class="form-control" type="text" placeholder="" />
-							</div>
-		
-							<div class="form-group">
-								<label>Did you sight any exposed naked wires within the facility? </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-								<label>If yes, where was it sighted </label>
-								<input class="form-control" type="text" placeholder="" />
-							</div>
-		
-							<div class="form-group">
-								<label>Did you sight any faulty sockets or switches within the facility? </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-								<label>If yes, where was it sighted </label>
-								<input class="form-control" type="text" placeholder="" />
-							</div>
-						  
-							<div class="form-group">
-								<label>Has a fire risk assessment been conducted to identify possible fire ignition sources? </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-								<label>if yes, (request for viewing)</label>
-							</div>
-		
-							<div class="form-group">
-								<label>What is the last review date of the fire risk assessment? </label>
-								<input class="form-control" type="date" placeholder="" />
-							</div>
-		
-							<div class="form-group">
-								<label>Ask for the procedure for monitoring electrical appliances. </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Is it a documented process ">Is it a documented process </option>
-										<option value="Word of mouth">Word of mouth</option>
-								</select>
-							</div>
-		
-								
-						
-		
-						  
-		
-						
-						</form>
-						
+
+                    <div class="form-group">
+                        <label>Is there any expired item in the first aid box</label>
+                        <select class="custom-select2 form-control" name="expired_item_first_aid_box" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Is there any other first-aid equipment </label>
+                        <select class="custom-select2 form-control" multiple="multiple" name="other_first-aid_equipment" style="width: 100%">
+                                <option value="Strectcher">Strectcher</option>
+                                <option value="Automatic External Defibrillator">Automatic External Defibrillator</option>
+                                <option value="Oxygen">Oxygen</option>
+                                <option value="Wheel Chair">Wheel Chair</option>
+                                <option value="None of the above">None of the above </option>
+                                <option value="All of the above ">All of the above </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Is there a form for issued first aid treatment in the first aid box?</label>
+                        <select class="custom-select2 form-control" name="issued_first-aid_treatment" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 3: Fire Safety</p>
 					</div>
-					<!-- horizontal Basic Forms End -->
-		
-					 <!-- horizontal Basic Forms Start -->
-					<div class="pd-20 card-box mb-30">
-						<div class="clearfix">
-							<div class="pull-left">
-								<p class="mb-30">Part 6: Control of Substances Hazardous to Health</p>
-							</div>
-						</div>
-						<form>
-		
-							<div class="form-group">
-								<label>Is workers' monitor screens' brightness moderate?</label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes, it is dim">Yes, it is dim</option>
-										<option value="No, it is not dim">No, it is not dim</option>
-								</select>
-							</div>
-		
-							<div class="form-group">
-								<label>Are eye checks conducted by the banks to evaluate the impact of on-screen looking on workers' eyes? </label>
-								<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-										<option value="">Select</option>
-										<option value="Yes">Yes</option>
-										<option value="No">No</option>
-								</select>
-								<label>if yes, how frequently?  </label>
-								<input class="form-control" type="text" placeholder="" />
-							</div>
-						  
-						
-						   
-						</form>
-						
+					 
+				</div>
+				<form  id="first_safety" class="Statutory_Compliance">
+                    <div class="form-group">
+                        <label>Are fire extinguishers present in the facility?</label>
+                        <select class="custom-select2 form-control" name="fire_extinguishers_present" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>What classes of fire extinguishers are in the facility? </label>
+                        <select class="custom-select2 form-control" name="classes_fire_extinguishers" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="DCP/ABC only">DCP/ABC only</option>
+                                <option value="CO2 only ">CO2 only</option>
+                                <option value="Both DCP/ABC/CO2">Both DCP/ABC/CO2</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+						<label>When is the expiring date of the fire extinguishers within the facility?</label>
+						<input class="form-control" name="expiring_date_fire_extinguishers" type="date" placeholder="" />
 					</div>
-					<!-- horizontal Basic Forms End -->
+
+                    <div class="form-group">
+						<label>When were the fire extinguishers serviced last? </label>
+						<input class="form-control" type="date" name="fire_extinguishers_serviced_last" placeholder="" /> 
+                        <label> choose which fire equipment</label>
+                            <select class="custom-select2 form-control" name="fire_equipment" multiple="multiple" style="width: 100%">
+                                    <option value="Fire extinguisher ">Fire extinguisher </option>
+                                    <option value="Fire hose reel ">Fire hose reel </option>
+                                    <option value="Smoke detector ">Smoke detector </option>
+                                    <option value="Water spriklers ">Water spriklers </option>
+                            </select>
+                        
+					</div>
+
+
+                    <div class="form-group">
+                        <label>Is there a fire service certificate for the year 2023? </label>
+                        <select class="custom-select2 form-control" name="fire_service_certificate" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>What other fire-fighting equipment are installed in the facility?   </label>
+                        <select class="custom-select2 form-control" name="other_fire-fighting_equipment_installed" multiple="multiple" style="width: 100%">
+                                <option value="Fire hose reels ">Fire hose reels </option>
+                                <option value="Water sprinklers ">Water sprinklers </option>
+                                <option value="Smoke detectors">Smoke detectors </option>
+                                <option value="None of the above">None of the above </option>
+                                <option value="All of the above ">All of the above </option>
+                        </select>
+                    </div>
+
+					<div class="form-group">
+                        <label>The fire extinguishers within the premises are they hung on the wall? and without obstruction? </label>
+                        <select class="custom-select2 form-control" name="fire_extinguishers_hung_wall" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if no, where is it placed on the floor? </label>
+						<input class="form-control" name=" where_placed_floor" type="text" placeholder="" />
+                    </div>
+
+					<div class="form-group">
+                        <label>Are they free of obstruction? </label>
+                        <select class="custom-select2 form-control" name="free_obstruction" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if no, where is the fire extinguisher obstructed? </label>
+						<input class="form-control" name="where_fire_extinguisher_obstructed" type="text" placeholder="" />
+                    </div>
+					
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+             <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+                    
+					<div class="pull-left">
+						<p class="mb-30">Part 4: Lifting Operations and Equipment</p>
+					</div>
+					 
+				</div>
+				<form  id="lifting_operations" class="Statutory_Compliance">
+
+                    <div class="form-group">
+                        <label>Are lifting equipment provided for workers when lifting and conveying items to a designated point?  </label>
+                        <select class="custom-select2 form-control" name="lifting_equipment_provided" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Did you sight any lifting equipment? </label>
+                        <select class="custom-select2 form-control" name="sight_any_lifting_equipment" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                    	
+				
+                   
+					
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+             <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 5: Electricity at work</p>
+					</div>
+					 
+				</div>
+				<form  id="Electricity" class="Statutory_Compliance">
+
+                    <div class="form-group">
+                        <label>Are electrical distribution boxes securely locked? </label>
+                        <select class="custom-select2 form-control" name="electrical_distribution_boxes_securely_locked" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if no, where is not locked? </label>
+						<input class="form-control" name="where_not_locked" type="text" placeholder="" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Did you sight any trailing cables within the facility?</label>
+                        <select class="custom-select2 form-control" name="sight_any_trailing_cables" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>If yes, where was it sighted </label>
+						<input class="form-control" name="if_sighted" type="text" placeholder="" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Did you sight any exposed naked wires within the facility? </label>
+                        <select class="custom-select2 form-control" name="sight_any_exposed_naked_wires" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>If yes, where was it sighted </label>
+						<input class="form-control" name="if_sighted1" type="text" placeholder="" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Did you sight any faulty sockets or switches within the facility? </label>
+                        <select class="custom-select2 form-control" name="faulty_sockets_switches" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>If yes, where was it sighted </label>
+						<input class="form-control" name="if_sighted2" type="text" placeholder="" />
+                    </div>
+                  
+                    <div class="form-group">
+                        <label>Has a fire risk assessment been conducted to identify possible fire ignition sources? </label>
+                        <select class="custom-select2 form-control" name="fire_risk_assessment" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if yes, (request for viewing)</label>
+                    </div>
+
+                    <div class="form-group">
+						<label>What is the last review date of the fire risk assessment? </label>
+						<input class="form-control" name="last_review_date_fire_risk_assessment" type="date" placeholder="" />
+					</div>
+
+                    <div class="form-group">
+                        <label>Ask for the procedure for monitoring electrical appliances. </label>
+                        <select class="custom-select2 form-control" name="procedure_monitoring_electrical_appliances" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Is it a documented process ">Is it a documented process </option>
+                                <option value="Word of mouth">Word of mouth</option>
+                        </select>
+                    </div>
+
+                    	
+				
+
+                  
+
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+             <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 6: Control of Substances Hazardous to Health</p>
+					</div>
+				</div>
+				<form  id="control_substances" class="Statutory_Compliance">
+
+                    <div class="form-group">
+                        <label>Is workers' monitor screens' brightness moderate?</label>
+                        <select class="custom-select2 form-control" name="monitor_screens_brightness_moderate" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes, it is dim">Yes, it is dim</option>
+                                <option value="No, it is not dim">No, it is not dim</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are eye checks conducted by the banks to evaluate the impact of on-screen looking on workers' eyes? </label>
+                        <select class="custom-select2 form-control" name="eye_checks_conducted" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if yes, how frequently?  </label>
+						<input class="form-control" name="yes_how_frequently" type="text" placeholder="" />
+                    </div>
+                  
+               
+                   
+				</form>
+                
+			</div>
+
+			<!-- horizontal Basic Forms End -->
 
 					<!-- section two end -->
 
@@ -1349,404 +1338,411 @@
 					<!-- section three -->
 
 						<div class="title pb-20 pt-20">
-							<h2 class="h3 mb-0"> ----------------- </h2>
+							<h2 class="h3 mb-0"> Environment </h2>
 						</div>
 						
-						<!-- horizontal Basic Forms Start -->
-						<div class="pd-20 card-box mb-30">
-							<div class="clearfix">
-								<div class="pull-left">
-									<h4 class="text-blue h4">Section 3</h4>
-									<p class="mb-30">Part 1: Housekeeping</p>
-								</div>
-								 
-							</div>
-							<form>
-								<div class="form-group">
-									<label>How is the general house keeping of the bank? </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Good">Good</option>
-											<option value="Fair">Fair</option>
-											<option value="Bad">Bad</option>
-									</select>
-									<label>if bad, where?	 </label>
-									<input class="form-control" type="text" placeholder="" />
-								</div>
-			
-								<div class="form-group">
-									<label>Are items stored securely in the right places? </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-									<label>if no, where? </label>
-									<input class="form-control" type="text" placeholder="" />
-								</div>
-			
-								<div class="form-group">
-									<label>Any signs of trailing cable </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-									<label>if yes, where?	</label>
-									<input class="form-control" type="text" placeholder="" />
-								</div>
-			
-								<div class="form-group">
-									<label>Other comment  </label>
-									<input class="form-control" type="text" placeholder="" />
-								</div>
-			
-								
-							
-							</form>
-							
-						</div>
-						<!-- horizontal Basic Forms End -->
-			
-						<!-- horizontal Basic Forms Start -->
-						<div class="pd-20 card-box mb-30">
-							<div class="clearfix">
-								<div class="pull-left">
-									<p class="mb-30">Part 2: Gangways</p>
-								</div>
-								 
-							</div>
-							<form>
-								
-								<div class="form-group">
-									<label>Are gangways free of any obstruction? </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-									<label>if no, where?	</label>
-									<input class="form-control" type="text" placeholder="" />
-								</div>
-			
-								<div class="form-group">
-									<label>Are gangways properly lit? </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-									<label>if no, where?	</label>
-									<input class="form-control" type="text" placeholder="" />
-								</div>
-			
-								<div class="form-group">
-									<label>Are gangways wide enough to accommodate the flow of human traffic?</label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-									<label>if no, where?	</label>
-									<input class="form-control" type="text" placeholder="" />
-								</div>
-			
-							
-							</form>
-							
-						</div>
-						<!-- horizontal Basic Forms End -->
-			
-						<!-- horizontal Basic Forms Start -->
-						<div class="pd-20 card-box mb-30">
-							<div class="clearfix">
-								<div class="pull-left">
-									<p class="mb-30">Part 3: Floors	</p>
-								</div>
-								 
-							</div>
-							<form>
-								<div class="form-group">
-									<label>Are all floors even, and free from port holes</label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-											<option value="Some">Some</option>
-									</select>
-								</div>
-			
-								<div class="form-group">
-									<label>During the audit, did you sight cracked floor tilings? </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-											<option value="Some">Some</option>
-									</select>
-									<label>if yes, where was it sighted? </label>
-									<input class="form-control" type="text" placeholder="" />
-								</div>
-			
-							
-							</form>
-							
-						</div>
-						<!-- horizontal Basic Forms End -->
-			
-						 <!-- horizontal Basic Forms Start -->
-						<div class="pd-20 card-box mb-30">
-							<div class="clearfix">
-								<div class="pull-left">
-									<p class="mb-30">Part 4: Lighting – General	</p>
-								</div>
-			
-								<form>
-								
-								<div class="form-group">
-									<label>Are there clear and visible lighting for workers and visitors?</label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-								</div>
-			
-								<div class="form-group">
-									<label>Does the facility have room for natural lighting?</label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-								</div>
-			
-								<div class="form-group">
-									<label>Did you sight any faulty bulbs within the facility?	</label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-									<label>if yes, where?</label>
-									<input class="form-control" type="text" placeholder="" />
-								</div>
-			
-						  
-							</div>
-							
-								
-							</form>
-							
-						</div>
-						<!-- horizontal Basic Forms End -->
-			
-						 <!-- horizontal Basic Forms Start -->
-						<div class="pd-20 card-box mb-30">
-							<div class="clearfix">
-								<div class="pull-left">
-									<p class="mb-30">Part 5: Stairs and Staircases</p>
-								</div>
-			
-								<form>
-			
-								<div class="form-group">
-									<label>Are all guardrails present?</label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-								</div>
-			
-								<div class="form-group">
-									<label>Did you sight any faulty guardrails</label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-									<label>if yes, where was it sighted? </label>
-									<input class="form-control" type="text" placeholder="" />
-								</div>
-			
-							</div>
-										
-							</form>
-							
-						</div>
-						<!-- horizontal Basic Forms End -->
-			
-						 <!-- horizontal Basic Forms Start -->
-						<div class="pd-20 card-box mb-30">
-							<div class="clearfix">
-								<div class="pull-left">
-									<p class="mb-30">Part 6: Access and Exit – General</p>
-								</div>
-			
-								<form>
-								<div class="form-group">
-									<label>Are all access doors free of obstruction?</label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-								</div>
-			
-								<div class="form-group">
-									<label>Are all exit doors free of obstruction?</label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-								</div>
-			
-								<div class="form-group">
-									<label>Are safety signs placed at access doors?	</label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-								</div>
-			
-								<div class="form-group">
-									<label>Are safety signs placed at exit doors?</label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-								</div>
-			
-							 
-							</div>                   
-							</form>
-							
-						</div>
-						<!-- horizontal Basic Forms End -->
-			
-						<!-- horizontal Basic Forms Start -->
-						<div class="pd-20 card-box mb-30">
-							<div class="clearfix">
-								<div class="pull-left">
-									<p class="mb-30">Part 7: Safety Signs – General	</p>
-								</div>
-							
-								<form>
-			
-										<div class="form-group">
-											<label>Are safety signs installed in strategic locations?</label>
-											<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-													<option value="">Select</option>
-													<option value="Yes">Yes</option>
-													<option value="No">No</option>
-											</select>
-										</div>
-			
-										<div class="form-group">
-											<label>Are safety signs in their right color coding	</label>
-											<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-													<option value="">Select</option>
-													<option value="All signs">All signs</option>
-													<option value="Some signs">Some signs</option>
-													<option value="Most signs">Most signs</option>
-											</select>
-										</div>
-			
-										<div class="form-group">
-											<label>Are there any signs faded?</label>
-											<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-													<option value="">Select</option>
-													<option value="Yes">Yes</option>
-													<option value="Some">Some</option>
-													<option value="None">None</option>
-											</select>
-										</div>
-			
-								</form>
-							</div>
-							
-						</div>
-						<!-- horizontal Basic Forms End -->
-			
-						<!-- horizontal Basic Forms Start -->
-						<div class="pd-20 card-box mb-30">
-							<div class="clearfix">
-								<div class="pull-left">
-									<p class="mb-30">Part 8: Fire Precautions</p>
-								</div>
-							
-								<form>
-			
-										<div class="form-group">
-											<label>Are there fire fighting equipment around the facility?</label>
-											<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-													<option value="">Select</option>
-													<option value="Yes">Yes</option>
-													<option value="No">No</option>
-													<option value="Not sufficient">Not sufficient</option>
-											</select>
-										</div>
-			
-										
-								   
-							
-								</form>
-							</div>
-							
-						</div>
-						<!-- horizontal Basic Forms End -->
-			
+								<!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<h4 class="text-blue h4">Section 3</h4>
+						<p class="mb-30">Part 1: Housekeeping</p>
+					</div>
 					 
-						<!-- horizontal Basic Forms Start -->
-						<div class="pd-20 card-box mb-30">
-							<div class="clearfix">
-								<div class="pull-left">
-									<p class="mb-30">Part 9: Temperature</p>
-								</div>
-							
-								<form>
-			
-										<div class="form-group">
-											<label>Is the facility temperature well regulated?</label>
-											<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-													<option value="">Select</option>
-													<option value="Yes">Yes</option>
-													<option value="No">No</option>
-											</select>
-										</div>
-			
-										<div class="form-group">
-											<label>Are workers exposed to extreme cold? </label>
-											<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-													<option value="">Select</option>
-													<option value="Yes">Yes</option>
-													<option value="No">No</option>
-											</select>
-											<label>if yes, where?</label>
-											<input class="form-control" type="text" placeholder="" />
-										</div>
-			
-										<div class="form-group">
-											<label>Are workers exposed to extreme heat?</label>
-											<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-													<option value="">Select</option>
-													<option value="Yes">Yes</option>
-													<option value="No">No</option>
-											</select>
-											<label>if yes, where?</label>
-											<input class="form-control" type="text" placeholder="" />
-										</div>
-			
-								</form>
-							</div>
-						</div>
-							
-						
-						<!-- horizontal Basic Forms End -->
+				</div>
+				<form  id="Housekeeping" class="Environment">
+                    <div class="form-group">
+                        <label>How is the general house keeping of the bank? </label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Good">Good</option>
+                                <option value="Fair">Fair</option>
+                                <option value="Bad">Bad</option>
+                        </select>
+                        <label>if bad, where?	 </label>
+						<input class="form-control" type="text" placeholder="" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are items stored securely in the right places? </label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if no, where? </label>
+						<input class="form-control" type="text" placeholder="" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Any signs of trailing cable </label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if yes, where?	</label>
+						<input class="form-control" type="text" placeholder="" />
+                    </div>
+
+                    <div class="form-group">
+						<label>Other comment  </label>
+						<input class="form-control" type="text" placeholder="" />
+					</div>
+
+					
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 2: Gangways</p>
+					</div>
+					 
+				</div>
+				<form  id="gangways" class="Environment">
+					
+                    <div class="form-group">
+                        <label>Are gangways free of any obstruction? </label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if no, where?	</label>
+						<input class="form-control" type="text" placeholder="" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are gangways properly lit? </label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if no, where?	</label>
+						<input class="form-control" type="text" placeholder="" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are gangways wide enough to accommodate the flow of human traffic?</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if no, where?	</label>
+						<input class="form-control" type="text" placeholder="" />
+                    </div>
+
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 3: Floors	</p>
+					</div>
+					 
+				</div>
+				<form id="floors" class="Environment">
+                    <div class="form-group">
+                        <label>Are all floors even, and free from port holes</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Some">Some</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>During the audit, did you sight cracked floor tilings? </label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Some">Some</option>
+                        </select>
+                        <label>if yes, where was it sighted? </label>
+						<input class="form-control" type="text" placeholder="" />
+                    </div>
+
+				
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+             <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 4: Lighting – General	</p>
+					</div>
+				</div>
+
+                    <form id="lighting_general" class="Environment">
+                    
+                    <div class="form-group">
+                        <label>Are there clear and visible lighting for workers and visitors?</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Does the facility have room for natural lighting?</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Did you sight any faulty bulbs within the facility?	</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if yes, where?</label>
+						<input class="form-control" type="text" placeholder="" />
+                    </div>
+
+              
+				
+					
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+             <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 5: Stairs and Staircases</p>
+					</div>
+				
+				</div>
+					
+                    <form id="stairs_staircases" class="Environment">
+
+                    <div class="form-group">
+                        <label>Are all guardrails present?</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Did you sight any faulty guardrails</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if yes, where was it sighted? </label>
+						<input class="form-control" type="text" placeholder="" />
+                    </div>
+
+				</form>
+
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+             <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 6: Access and Exit – General</p>
+					</div>
+				</div>    
+
+                    <form id="access_exit" class="Environment">
+                    <div class="form-group">
+                        <label>Are all access doors free of obstruction?</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are all exit doors free of obstruction?</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are safety signs placed at access doors?	</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are safety signs placed at exit doors?</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+				</form>
+			               
+				
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 7: Safety Signs – General	</p>
+					</div>
+				</div>
+                
+                    <form id="safety_signs" class="Environment">
+
+                            <div class="form-group">
+                                <label>Are safety signs installed in strategic locations?</label>
+                                <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                        <option value="">Select</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Are safety signs in their right color coding	</label>
+                                <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                        <option value="">Select</option>
+                                        <option value="All signs">All signs</option>
+                                        <option value="Some signs">Some signs</option>
+                                        <option value="Most signs">Most signs</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Are there any signs faded?</label>
+                                <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                        <option value="">Select</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="Some">Some</option>
+                                        <option value="None">None</option>
+                                </select>
+                            </div>
+
+				    </form>
+                
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 8: Fire Precautions</p>
+					</div>
+				</div>
+                
+                    <form id="fire_precautions" class="Environment">
+
+                            <div class="form-group">
+                                <label>Are there fire fighting equipment around the facility?</label>
+                                <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                        <option value="">Select</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                        <option value="Not sufficient">Not sufficient</option>
+                                </select>
+                            </div>
+
+                            
+                       
+				
+				    </form>
+               
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+         
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 9: Temperature</p>
+					</div>
+				</div>
+                
+                    <form id="temperature" class="Environment">
+
+                            <div class="form-group">
+                                <label>Is the facility temperature well regulated?</label>
+                                <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                        <option value="">Select</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Are workers exposed to extreme cold? </label>
+                                <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                        <option value="">Select</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                </select>
+                                <label>if yes, where?</label>
+                                <input class="form-control" type="text" placeholder="" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Are workers exposed to extreme heat?</label>
+                                <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
+                                        <option value="">Select</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                </select>
+                                <label>if yes, where?</label>
+                                <input class="form-control" type="text" placeholder="" />
+                            </div>
+
+
+                     
+				    </form>
+               
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+         
 
 					<!-- end section three -->
 
@@ -1758,64 +1754,62 @@
 						</div>
 						
 						<!-- horizontal Basic Forms Start -->
-						<div class="pd-20 card-box mb-30">
-							<div class="clearfix">
-								<div class="pull-left">
-									<h4 class="text-blue h4">Section 4</h4>
-									<p class="mb-30">Part 1: Hand Tools</p>
-								</div>
-								 
-							</div>
-							<form>
-								<div class="form-group">
-									<label>Were mechanical tools in good condition? </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="All tools were good ">All tools were good </option>
-											<option value="Some tools were bad ">Some tools were bad </option>
-											<option value="All tools were bad ">All tools were bad </option>
-											<option value="Some tools were bad ">Some tools were bad </option>
-									</select>
-								</div>
-							
-							</form>
-							
-						</div>
-						<!-- horizontal Basic Forms End -->
-			
-						<!-- horizontal Basic Forms Start -->
-						<div class="pd-20 card-box mb-30">
-							<div class="clearfix">
-								<div class="pull-left">
-									<p class="mb-30">Part 2: Ladders</p>
-								</div>
-								 
-							</div>
-							<form>
-								
-								<div class="form-group">
-									<label>During the audit, did you see any step ladders to assist in height elevation? </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-								</div>
-			
-								<div class="form-group">
-									<label>If yes, was it in a good condition?  </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-								</div>
-						
-							</form>
-						</div>
-							
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<h4 class="text-blue h4">Section 4</h4>
+						<p class="mb-30">Part 1: Hand Tools</p>
+					</div>
+					 
+				</div>
+				<form id="handtools" class="work_equipment">
+                    <div class="form-group">
+                        <label>Were mechanical tools in good condition? </label>
+                        <select class="custom-select2 form-control" name="mechanical_tools_good_condition" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="All tools were good ">All tools were good </option>
+                                <option value="Some tools were bad ">Some tools were bad </option>
+                                <option value="All tools were bad ">All tools were bad </option>
+                                <option value="Some tools were bad ">Some tools were bad </option>
+                        </select>
+                    </div>
 				
-					<!-- end secdtion four -->
+				</form>
+                
+			</div>
+			<!-- horizontal Basic Forms End -->
+
+            <!-- horizontal Basic Forms Start -->
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<p class="mb-30">Part 2: Ladders</p>
+					</div>
+					 
+				</div>
+				<form  id="ladders" class="work_equipment">
+					
+                    <div class="form-group">
+                        <label>During the audit, did you see any step ladders to assist in height elevation? </label>
+                        <select class="custom-select2 form-control" name="step_ladders_ assist_height_elevation" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>If yes, was it in a good condition?  </label>
+                        <select class="custom-select2 form-control" name="good_condition" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+
+			
+				</form>
+			</div>
 
 					<!-- section five  -->
 						<div class="title pb-20 pt-20">
@@ -1823,68 +1817,69 @@
 						</div>
 						
 						<!-- horizontal Basic Forms Start -->
-						<div class="pd-20 card-box mb-30">
-							<div class="clearfix">
-								<div class="pull-left">
-									<h4 class="text-blue h4">Section 5</h4>
-									<p class="mb-30">Part 1: Hand Tools</p>
-								</div>
-								 
-							</div>
-							<form>
-								<div class="form-group">
-									<label>Are male and female toilets provided? </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-								</div>
-							
-								<div class="form-group">
-									<label>As at the audit, were toilets in good usable conditions?  </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Good ">Good </option>
-											<option value="Fair ">Fair </option>
-											<option value="Bad  ">Bad  </option>
-									</select>
-								</div>
-			
-								<div class="form-group">
-									<label>Are there adequate safety signs placed to differentiate male and female toilets?</label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-									<label>If no, which of the toilets? </label>
-									<input class="form-control" type="text" placeholder="" />
-								</div>
-							
-								<div class="form-group">
-									<label>Is there any safety signage promoting personal hygiene in the toilet? </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-									</select>
-									<label>if yes, descirbe which sign</label>
-									<input class="form-control" type="text" placeholder="" />
-								</div>
-			
-								<div class="form-group">
-									<label>Are workers provided with cloak rooms/lockers to keep personal belongings? </label>
-									<select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px">
-											<option value="">Select</option>
-											<option value="Yes">Yes</option>
-											<option value="No">No</option>
-											<option value="It is not applicable">It is not applicable</option>
-									</select>
-								</div>
-			
-							</form>
-						</div>
+			<div class="pd-20 card-box mb-30">
+				<div class="clearfix">
+					<div class="pull-left">
+						<h4 class="text-blue h4">Section 5</h4>
+						<p class="mb-30">Welfare</p>
+					</div>
+					 
+				</div>
+				<form  id="Welfare" class="welfare_facilities">
+                    <div class="form-group">
+                        <label>Are male and female toilets provided? </label>
+                        <select class="custom-select2 form-control" name=" male_female_toilets_provided" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                    </div>
+				
+                    <div class="form-group">
+                        <label>As at the audit, were toilets in good usable conditions?  </label>
+                        <select class="custom-select2 form-control" name="toilets_good_usable_conditions" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Good ">Good </option>
+                                <option value="Fair ">Fair </option>
+                                <option value="Bad  ">Bad  </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are there adequate safety signs placed to differentiate male and female toilets?</label>
+                        <select class="custom-select2 form-control" name="safety_signs_placed_differentiate_male_female_toilets" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>If no, which of the toilets? </label>
+						<input class="form-control" name="if_no_which_toilet" type="text" placeholder="" />
+                    </div>
+				
+                    <div class="form-group">
+                        <label>Is there any safety signage promoting personal hygiene in the toilet? </label>
+                        <select class="custom-select2 form-control" name="safety_signage_promoting_personal_hygiene_toilet" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                        </select>
+                        <label>if yes, descirbe which sign</label>
+						<input class="form-control" name="descirbe_sign" type="text" placeholder="" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are workers provided with cloak rooms/lockers to keep personal belongings? </label>
+                        <select class="custom-select2 form-control" name="workers_provided_cloak-_rooms/lockers" style="width: 100%; height: 38px">
+                                <option value="">Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="It is not applicable">It is not applicable</option>
+                        </select>
+                    </div>
+				
+				
+				</form>
+				</div>
 							
 					<!-- end section five -->
 
@@ -1894,7 +1889,6 @@
 							<h2 class="h3 mb-0">Pictorial evidence </h2>
 						</div>
 						
-						<!-- horizontal Basic Forms Start -->
 						<div class="pd-20 card-box mb-30">
 							<div class="clearfix">
 								<div class="pull-left">
@@ -1903,7 +1897,7 @@
 								</div>
 								 
 							</div>
-							<form>
+							<form  id="picture" class="Pictorial_evidence">
 								<div class="form-group">
 									<label>Poor housekeeping </label>
 									<div class="custom-file">
@@ -2007,14 +2001,15 @@
 										<label class="custom-file-label">Choose file</label>
 									</div>
 								</div>
-
-								<div>
-									<button type="button" class="btn btn-primary">Submit</button></a>
-								</div>
-
-							</form>
-						</div>
 			
+							 
+								<div class="button">
+									<a href="section5.html"><button type="button" class="btn btn-primary">Back</button></a>
+									<a href="preview.html" onclick="submit()"><button type="button" class="btn btn-primary">Preview</button></a>
+			
+								</div>
+							</form>
+							</div>
 						<!-- horizontal Basic Forms End -->
 			
 	

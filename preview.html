@@ -1924,6 +1924,9 @@
 	<script src="form-request.js"></script>
 	<script>
 		function submit() {
+			let res = confirm('Are you sure to submit?');
+			if (!res)
+				return;
 			getFormPayload().then((re) => {
 				save(re);
 				//console.log(re);

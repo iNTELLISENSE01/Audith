@@ -447,10 +447,27 @@
 
 	<script src="form-request.js"></script>
 	<script>
-		function submit() {
-			getFormPayload().then((re) => {
-				save(re);
-			});
+				function submit() {
+					let res = confirm('Are you sure to submit?');
+				if(!res)
+					return;
+					let inputFiles = document.querySelectorAll("input[type='file']");
+			let formData = new FormData();
+			inputFiles.forEach((elem,index) => {
+				formData.append("files[]", elem.files[0])
+				});
+			fetch("http://localhost/dechaudit/ajax-file-upload.php", {
+					method: "POST",
+					body: formData
+				}).then((re) => {
+					return re.text()
+				}).then((re) => {
+					console.log(re)
+				}).catch((error) => {
+					console.log(error)
+				}).finally((er) => {
+
+				})
 		}
 
 		window.addEventListener("load",function () {

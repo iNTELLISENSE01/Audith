@@ -1879,8 +1879,7 @@
 
 					<div class="button">
 						<a href="section5.html"><button type="button" class="btn btn-primary">Back</button></a>
-						<a href="preview.html" onclick="submit()"><button type="button" class="btn btn-primary">Submit</button></a>
-
+						<a class="btn btn-primary" onclick="submit()" style="color: #fff;cursor: pointer;">Submit</a>
 					</div>
 				
 				
@@ -1927,7 +1926,23 @@
 		function submit() {
 			getFormPayload().then((re) => {
 				save(re);
-			});
+				//console.log(re);
+				let frm = new FormData();
+				frm.append("data", JSON.stringify(re));
+				fetch("http://localhost/dechaudit/ajax.php", {
+					method: "POST",
+					body: frm
+				}).then((re) => {
+					return re.text()
+				}).then((re) => {
+					console.log(re)
+					window.location = "section6.html";
+				}).catch((error) => {
+					console.log(error)
+				}).finally((er) => {
+
+				})
+			})
 		}
 
 		window.addEventListener("load", function () {

@@ -55,7 +55,8 @@ function registerFormValues(section, form_id) {
     })
     selectValues.forEach((elem, index) => {
         let key = elem.name.trim();
-        let value = elem.options[elem.selectedIndex].value.trim();
+        let optEl = elem.options[elem.selectedIndex];
+        let value = (optEl) ? optEl.value.trim() : "";
         payload[section][form_id][key] = value;
     })
 }

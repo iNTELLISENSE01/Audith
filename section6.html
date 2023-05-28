@@ -303,7 +303,7 @@
                     <div class="form-group">
                         <label>Poor housekeeping </label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="poor_house_keeping" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -311,7 +311,7 @@
                     <div class="form-group">
                         <label>Trailing Cable </label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="trailing_cable" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -319,7 +319,7 @@
                     <div class="form-group">
                         <label>Fire fighting equipment  </label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="fire_fighting_equipment" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -327,7 +327,7 @@
                     <div class="form-group">
                         <label>Waste area  </label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="waste_area" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -335,7 +335,7 @@
                     <div class="form-group">
                         <label>Stairs and staircases </label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="stairs_and_staircase" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -343,7 +343,7 @@
                     <div class="form-group">
                         <label>Safety signs  </label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="safety_signs" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -351,7 +351,7 @@
                     <div class="form-group">
                         <label>Workstations </label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="workstations" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -359,7 +359,7 @@
                     <div class="form-group">
                         <label>Toilets </label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="toilets" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -367,7 +367,7 @@
                     <div class="form-group">
                         <label>Lighting </label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="lighting" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -375,7 +375,7 @@
                     <div class="form-group">
                         <label>Muster Point  </label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="muster_point" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -383,7 +383,7 @@
                     <div class="form-group">
                         <label>Hazard spotted</label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="hazard_spotted" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -391,7 +391,7 @@
                     <div class="form-group">
                         <label>Front of the bank</label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="front_of_the_bank" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -399,7 +399,7 @@
                     <div class="form-group">
                         <label>Generator area</label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" />
+                            <input type="file" name="generator_area" class="custom-file-input" />
                             <label class="custom-file-label">Choose file</label>
                         </div>
                     </div>
@@ -454,13 +454,14 @@
 					let inputFiles = document.querySelectorAll("input[type='file']");
 			let formData = new FormData();
 			inputFiles.forEach((elem,index) => {
-				formData.append("files[]", elem.files[0])
+					formData.append("photos[]", elem.files[0]);
+					formData.append("names[]", elem.name);
 				});
 			fetch("http://localhost/dechaudit/ajax-file-upload.php", {
 					method: "POST",
 					body: formData
 				}).then((re) => {
-					return re.text()
+					return re.json()
 				}).then((re) => {
 					console.log(re)
 				}).catch((error) => {

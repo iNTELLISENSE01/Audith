@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    if (count($validFiles) == count($_POST["names"])) {
+    if (count($errors) == 0) {
         foreach ($validFiles as $key => $value) {
             $mt = mt_rand();
             $newFileName = uniqid("$mt-") . ".png";

@@ -302,111 +302,98 @@
 				<form  id="picture" class="Pictorial_evidence">
                     <div class="form-group">
                         <label>Poor housekeeping </label>
-                        <div class="custom-file">
-                            <input type="file" name="poor_house_keeping" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="poor_house_keeping" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Trailing Cable </label>
-                        <div class="custom-file">
-                            <input type="file" name="trailing_cable" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="trailing_cable" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Fire fighting equipment  </label>
-                        <div class="custom-file">
-                            <input type="file" name="fire_fighting_equipment" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="fire_fighting_equipment" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Waste area  </label>
-                        <div class="custom-file">
-                            <input type="file" name="waste_area" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="waste_area" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Stairs and staircases </label>
-                        <div class="custom-file">
-                            <input type="file" name="stairs_and_staircase" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="stairs_and_staircase" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Safety signs  </label>
-                        <div class="custom-file">
-                            <input type="file" name="safety_signs" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="safety_signs" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Workstations </label>
-                        <div class="custom-file">
-                            <input type="file" name="workstations" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="workstations" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Toilets </label>
-                        <div class="custom-file">
-                            <input type="file" name="toilets" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="toilets" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Lighting </label>
-                        <div class="custom-file">
-                            <input type="file" name="lighting" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="lighting" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Muster Point  </label>
-                        <div class="custom-file">
-                            <input type="file" name="muster_point" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="muster_point" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Hazard spotted</label>
-                        <div class="custom-file">
-                            <input type="file" name="hazard_spotted" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="hazard_spotted" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Front of the bank</label>
-                        <div class="custom-file">
-                            <input type="file" name="front_of_the_bank" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="front_of_the_bank" class="form-control" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Generator area</label>
-                        <div class="custom-file">
-                            <input type="file" name="generator_area" class="custom-file-input" />
-                            <label class="custom-file-label">Choose file</label>
+						<div class="">
+							<input type="file" name="generator_area" class="form-control" />
                         </div>
                     </div>
 
                  
 					<div class="button">
-						<a class="btn btn-primary" onclick="submit()" style="color: #fff;cursor: pointer;">Submit</a>
+						<a class="btn btn-primary" onclick="submit(this)" style="color: #fff;cursor: pointer;">Submit</a>
 					</div>
 				</form>
                 
@@ -447,33 +434,66 @@
 
 	<script src="form-request.js"></script>
 	<script>
-				function submit() {
+				function submit(elem) {
+					let photoErr = formErr = false;
 					let res = confirm('Are you sure to submit?');
 				if(!res)
 					return;
 					let inputFiles = document.querySelectorAll("input[type='file']");
-			let formData = new FormData();
-			inputFiles.forEach((elem,index) => {
-					formData.append("photos[]", elem.files[0]);
-					formData.append("names[]", elem.name);
-				});
-			fetch("http://localhost/dechaudit/ajax-file-upload.php", {
-					method: "POST",
-					body: formData
-				}).then((re) => {
-					return re.json()
-				}).then((re) => {
-					console.log(re)
-				}).catch((error) => {
+					elem.disabled = true;
+				elem.innerHTML = "<i class='fa fa-spinner fa-spin'></i>";
+			
+			
+				//SUBMIT FORM FILLED
+				console.log("Submitting Form");
+				let re = localStorage.getItem("formRequestPayload");
+				let frm = new FormData();
+					frm.append("data", re);
+					fetch("http://localhost/dechaudit/ajax.php", {
+						method: "POST",
+						body: frm
+					}).then((re) => {
+						return re.text()
+					}).then((re) => {
+						//console.log(re)
+					//prompt()
+					}).catch((error) => {
 					console.log(error)
-				}).finally((er) => {
+					formErr = true;
+					}).finally((er) => {
 
 				})
+
+
+			//SUBMIT PHOTO
+				//if(!formErr){
+					console.log("Submitting Photo");
+					let formData = new FormData();
+					inputFiles.forEach((elem,index) => {
+							formData.append("photos[]", elem.files[0]);
+							formData.append("names[]", elem.name);
+						});
+					fetch("http://localhost/dechaudit/ajax-file-upload.php", {
+							method: "POST",
+							body: formData
+						}).then((re) => {
+							return re.json();
+						}).then((re) => {
+							console.log(re)
+						}).catch((error) => {
+							console.log(error)
+							photoErr = true;
+						}).finally((er) => {
+							elem.disabled = false;
+							elem.innerHTML = "Submit";
+						})
+					//}
+
 		}
 
-		window.addEventListener("load",function () {
+		{/* window.addEventListener("load",function () {
 			setFormPayload();
-		})
+		}) */}
 	</script>
 </body>
 
